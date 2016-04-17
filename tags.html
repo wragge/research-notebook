@@ -20,7 +20,7 @@ permalink: /tags/
     <ul>
     {% for note in site.notes %}
       {% if note.tags contains tag %} 
-        <li><a href="{{ site.baseurl}}{{ note.url }}">{{ note.repository }}: {{ note.citation }}, {{note.title}}</a></li>
+        {% include note_list.html note=note %}
       {% endif %}
     {% endfor %}
     </ul>

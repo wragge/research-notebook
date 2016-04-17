@@ -1,10 +1,11 @@
 ---
 date: 2016-04-17
 layout: default_note
+category: Closed Access
 note_type: Other sources
 title: Commonwealth agencies related to archives
 ---
-These are just agency notes copied from RecordSearch and listed in chronological order.
+These are just agency notes copied verbatim from RecordSearch and listed in chronological order.
 
 * [CA 323](#ca-323) -- Commonwealth Archives Committee, 1946-1964
 * [CA 780](#ca-780) -- Archives Division, Commonwealth National Library, 1952-1961

@@ -21,7 +21,7 @@ layout: default
     <ul>
     {% assign notes = site.notes | sort: "date" | reverse%}
     {% for note in notes limit: 5 %}
-      <li><a href="{{ site.baseurl }}{{ note.url }}">{{ note.citation }}, {{ note.title }}</a></li>
+      {% include note_list.html note=note %}
     {% endfor %}
     </ul>
   </div>
