@@ -10,4 +10,7 @@
 {% elsif page.note_type == "Correspondence" %}
     <h1><small>{{page.note_type}}</small><br>{{ page.title }}</h1> 
     <p class="text-muted">From {{ page.from }} to {{ page.to }}, {{ page.date | date_to_long_string }}</p>
+{% elsif page.note_type == "Other sources" %}
+    <h1><small>{{page.note_type}}</small><br>{{ page.title }}</h1> 
+    <p class="text-muted">Created: {{ page.date | date_to_long_string }}</p>
 {% endif %}

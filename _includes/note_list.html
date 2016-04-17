@@ -3,4 +3,6 @@
     <li><a href="{{ site.baseurl }}{{ note.url }}">{{ note.repository }}: {{ note.citation }}, {{ note.title }}</a></li>
 {% elsif note.note_type == "Correspondence" %}
     <li><a href="{{ site.baseurl }}{{ note.url }}">{{ note.title }}, {{ note.date | date_to_string}}</a></li>
+{% elsif note.note_type == "Other sources" %}
+    <li><a href="{{ site.baseurl }}{{ note.url }}">{{ note.title }}</a></li>
 {% endif %}
