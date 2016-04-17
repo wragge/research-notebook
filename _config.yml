@@ -1,0 +1,46 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Research notebook
+email: tim@discontents.com.au
+description: > # this means to ignore newlines until "baseurl:"
+  An open research notebook attempting to document my adventures in the world of digital history and beyond.
+baseurl: "/research-notebook" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
+twitter_username: wragge
+github_username:  wragge
+
+gems:
+  - jekyll-gallery-generator
+
+# Build settings
+markdown: kramdown
+
+collections:
+  projects:
+    output: true
+    permalink: '/:collection/:title/'
+  notes:
+    output: true
+    permalink: '/:collection/:title/'
+    layout: default
+
+gallery:
+  # path to the gallery
+  dir: images
+  # title for gallery index
+  title: "Images"
+  # title prefix for gallery page. title=title_prefix+gallery_name
+  title_prefix: "Images: "
+  # field to control sorting of galleries for the index page
+  # (possible values are: title, date_time, best_image)
+  sort_field: "date_time"
+  # sizes for thumbnails
+  thumbnail_size:
+    x: 300
+    y: 300

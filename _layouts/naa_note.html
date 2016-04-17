@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="{{ site.baseurl }}/">Research notebook</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li {% if page.url == "/" %} class="active"{% endif %}><a href="{{ site.baseurl }}/">Home</a></li>
+              <li{% if page.url contains "projects" %} class="active"{% endif %}><a href="{{ site.baseurl }}/projects/">Projects</a></li>
+              <li{% if page.url contains "notes" %} class="active"{% endif %}><a href="{{ site.baseurl }}/notes/">Notes</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </nav>
+      <a class="btn btn-primary btn-sm pull-right" href="http://www.naa.gov.au/cgi-bin/Search?O=I&Number={{ page.barcode }}">View on RecordSearch <i class="fa fa-external-link" aria-hidden="true"></i></a>
+      {% assign repository = site.data.repositories[page.repository] %}
+      <h1><small>{{ repository.long }}</small><br>{{ page.citation }}</h1> 
+      <h2>&lsquo;{{ page.title }}&rsquo;</h2>
+
+      <p class="text-muted">Viewed: {{ page.date | date_to_long_string }}</p>
+      <hr>
+      <div class="row">
+        <div class="col-md-8">
+          {{ content }}
+        </div>
+        <div class="col-md-3 col-md-offset-1">
+          <h4>Related projects</h4>
+          <ul>
+          {% for category in page.categories %}
+            <li><h5><a href="{{ site.baseurl }}/projects/{{ category | slugify }}/">{{ category }}</a></h5></li>
+          {% endfor %}
+          </ul>
+          <h4>Tags</h4>
+          {% for tag in page.tags %}
+            <a class="label label-primary" href="{{ site.baseurl }}/tags/#{{ tag | slugify }}/">{{ tag }}</a> 
+          {% endfor %}
+        </div>
+      </div>
+      {% assign images = site.pages | where: "title", "Images" %}
+      {% assign gallery = images[0].galleries | where: "gallery", page.barcode %}
+      {% if gallery.size > 0 %}
+      <h3>Images</h3>
+        <div class="img-list">
+        {% for image in gallery[0].images} %}
+          <a class="img-thumbnail" href="{{ site.baseurl }}/images/{{ page.barcode }}/{{ image }}"><img class="img-responsive" src="{{ site.baseurl }}/images/{{ page.barcode }}/thumbs/{{ image }}"></a>
+        {% endfor %}
+        </div>
+      {% endif %}
+      {% include footer.html %}
+    </div>  
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="{{ site.baseurl }}/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+---
+layout: default
+---
+<h1><a href="/{{ site.gallery.dir }}">{{ page.title }}</a></h1>
+<hr />
+{% for image in page.images %}
+    <div class="center-block">
+        <a name="{{ image }}"></a>
+        <a href="{{ image }}" class="thumbnail pull-left">
+            <img class="gallery-image" src="thumbs/{{ image }}" /> 
+        </a>
+    </div>
+{% endfor %}

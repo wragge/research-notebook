@@ -1,0 +1,15 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+@import "variables";
+@import "bootstrap";
+@import "bootswatch";
+
+.img-list { text-align: center; }
+.img-list a { margin: 10px;}
+.site-footer {
+    margin-top: 40px;
+    border-top: 1px solid #98978B;
+    padding-top: 10px;
+}

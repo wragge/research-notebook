@@ -1,0 +1,19 @@
+---
+permalink: /projects/
+layout: default
+title: Projects
+---
+
+<h1>Projects</h1>
+
+{% assign groups = site.projects | group_by: "status" | sort: "name" %}
+{% for group in groups %}
+    {% unless group.name == "" %}
+        <h3>{{ group.name }}</h3>
+        <ul>
+        {% for project in group.items | sort "title" %}
+            <li><a href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a></li>
+        {% endfor %}
+        </ul>
+    {% endunless %}
+{% endfor %}

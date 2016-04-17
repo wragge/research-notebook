@@ -1,0 +1,28 @@
+---
+layout: default
+permalink: /tags/
+---
+
+<h1>Tags</h1>
+
+{% assign tags = "" | split:"|"  %}
+{% for note in site.notes %}
+  {% for tag in note.tags %}
+    {% unless tags contains tag %}
+      {% assign tags = tags | push: tag %}
+    {% endunless %}
+  {% endfor %}
+{% endfor %}
+
+<div id="archives">
+{% for tag in tags %}
+    <h3 id="#{{ tag| slugize }}">{{ tag }}</h3>
+    <ul>
+    {% for note in site.notes %}
+      {% if note.tags contains tag %} 
+        <li><a href="{{ site.baseurl}}{{ note.url }}">{{ note.repository }}: {{ note.citation }}, {{note.title}}</a></li>
+      {% endif %}
+    {% endfor %}
+    </ul>
+{% endfor %}
+</div>

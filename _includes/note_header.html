@@ -1,0 +1,13 @@
+{% if page.note_type == "Archives" %}
+    {% if page.barcode %}
+        <a class="btn btn-primary btn-sm pull-right" href="http://www.naa.gov.au/cgi-bin/Search?O=I&Number={{ page.barcode }}">View on RecordSearch <i class="fa fa-external-link" aria-hidden="true"></i></a>
+    {% endif %}
+    {% assign repository = site.data.repositories[page.repository] %}
+    <h1><small>{{ repository.long }}</small><br>{{ page.citation }}</h1> 
+    <h2>&lsquo;{{ page.title }}&rsquo;</h2>
+
+    <p class="text-muted">File viewed: {{ page.date | date_to_long_string }}</p>
+{% elsif page.note_type == "Correspondence" %}
+    <h1><small>{{page.note_type}}</small><br>{{ page.title }}</h1> 
+    <p class="text-muted">From {{ page.from }} to {{ page.to }}, {{ page.date | date_to_long_string }}</p>
+{% endif %}
