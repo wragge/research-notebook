@@ -141,9 +141,11 @@ Historical agency address
 Commonwealth National Library
 Annexe, Parkes ACT
 
-## CA 602 -- Commonwealth Archives Office
+## CA 602
 
-23 Mar 1961 - 07 Mar 1974
+### Commonwealth Archives Office
+
+**23 Mar 1961 - 07 Mar 1974**
 
 Prior to the 1940's no formal arrangements existed for the
 preservation of the vast majority of records other than patents
@@ -289,9 +291,11 @@ Legislation
 administered
 Cabinet Decision
 
-## CA 1720 -- Australian Archives, Central Office
+## CA 1720
 
-07 Mar 1974 - 01 Jul 1994
+### Australian Archives, Central Office
+
+**07 Mar 1974 - 01 Jul 1994**
 	
 On 7 March 1974 the Commonwealth Archives Office was renamed the
 Australian Archives. The Australian Archives is a central service
@@ -470,10 +474,11 @@ Kingston ACT
 1976-1994: Mining Industry House, 216 Northbourne Avenue, Braddon
 ACT
 
+## CA 7970
 
-## CA 7970 -- Australian Archives, National Office
+###Australian Archives, National Office
 
-01 Jul 1994 - 27 Feb 1998
+**01 Jul 1994 - 27 Feb 1998**
 
 Australian Archives, National Office was created on 1 July 1994
 following the amalgamation of the Central Office, located at Braddon,
@@ -564,9 +569,11 @@ Mining Industry House, 216 Northbourne
 Feb 1998-Mar 1998  : National Archives Building, Queen Victoria
                      Terrace, Parkes, ACT
                      
-## CA 8550 -- National Archives of Australia, Canberra Office
+## CA 8550
 
-27 Feb 1998 -
+### National Archives of Australia, Canberra Office
+
+**27 Feb 1998 -**
 
 On 27 February 1998 the Minister for Communications, the
 Information Economy and the Arts, Senator Richard Alston, announced a
