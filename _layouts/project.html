@@ -8,30 +8,32 @@
       <p class="lead">{{ page.description }}</p>
       <hr>
       {{ content }}
-      <h3>Notes</h3>
       {% assign notes = site.notes | where: "category", page.title %}
-      {% assign types = notes | group_by: "note_type" | sort: "name" %}
-      {% for type in types %}
-        <h4>{{ type.name }}</h4>
-        {% if type.name == "Archives" %}
-          {% assign repositories = type.items | group_by: "repository" | sort: "name" %}
-          {% for repository_group in repositories %}
-            {% assign repository = site.data.repositories[repository_group.name] %}
-            <h5>{{ repository.long }}</h5>
+      {% if notes.size > 0 %}
+        <h3>Notes</h3>
+        {% assign types = notes | group_by: "note_type" | sort: "name" %}
+        {% for type in types %}
+          <h4>{{ type.name }}</h4>
+          {% if type.name == "Archives" %}
+            {% assign repositories = type.items | group_by: "repository" | sort: "name" %}
+            {% for repository_group in repositories %}
+              {% assign repository = site.data.repositories[repository_group.name] %}
+              <h5>{{ repository.long }}</h5>
+              <ul>
+              {% for item in repository_group.items %}
+                {% include note_list.html note=item %}
+              {% endfor %}
+              </ul>
+            {% endfor %}
+          {% else %}
             <ul>
-            {% for item in repository_group.items %}
+            {% for item in type.items %}
               {% include note_list.html note=item %}
             {% endfor %}
             </ul>
-          {% endfor %}
-        {% else %}
-          <ul>
-          {% for item in type.items %}
-            {% include note_list.html note=item %}
-          {% endfor %}
-          </ul>
-        {% endif %}
-      {% endfor %}
+          {% endif %}
+        {% endfor %}
+      {% endif %}
       {% include footer.html %}
     </div>  
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
