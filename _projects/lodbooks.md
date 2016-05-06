@@ -3,7 +3,7 @@ title: LODBooks
 layout: project
 description: |
     Experiments in developing online historical narratives that embed rich structured data about people, places, events and resources. 
-status: current
+status: Current
 ---
 
 ## Demo site
