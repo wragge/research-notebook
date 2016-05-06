@@ -1,7 +1,9 @@
 ---
 layout: project
-title: Immigration and Surveillance
+title: Immigration, Recordkeeping, and Surveillance
 status: Current
+description: |
+  This project is concerned with the role of recordkeeping in the surveillance of 'suspect' populations. In particular, I'm exploring two sets of records held by the National Archives of Australia -- records created through the workings of the White Australia Policy, and surveillance files created by ASIO. In both cases I'm interested in working back from the surviving records to understand more about the systems that created them. Can we turn state surveillance back on itself?
 ---
 
 ### Sites
