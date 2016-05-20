@@ -17,10 +17,20 @@
             <li><h5><a href="{{ site.baseurl }}/projects/{{ category | slugify }}/">{{ category }}</a></h5></li>
           {% endfor %}
           </ul>
-          <h4>Tags</h4>
-          {% for tag in page.tags %}
-            <a class="label label-primary" href="{{ site.baseurl }}/tags/#{{ tag | slugify }}/">{{ tag }}</a> 
+          {% if page.documentation %}
+          <h4>Documentation</h4>
+          <ul>
+          {% for documentation in page.documentation %}
+            <li><h5><a href="{{ site.baseurl }}/notes/{{ documentation | slugify }}/">{{ documentation }}</a></h5></li>
           {% endfor %}
+          </ul>
+          {% endif %}
+          {% if page.tags %}
+            <h4>Tags</h4>
+            {% for tag in page.tags %}
+              <a class="label label-primary" href="{{ site.baseurl }}/tags/#{{ tag | slugify }}/">{{ tag }}</a> 
+            {% endfor %}
+          {% endif %}
         </div>
       </div>
       {% if page.image_folder %}

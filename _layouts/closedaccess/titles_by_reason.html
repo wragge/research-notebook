@@ -1,0 +1,26 @@
+---
+layout: default_note
+---
+
+{% assign filename = page.url | remove: '/experiments/' | remove: '/' %}
+{% assign filepath = filename | prepend: 'titles/by-reason/' | append: '.txt' %}
+{% assign ghpath = filename | prepend: page.github_raw_url | append: '.txt' %}
+
+<div class="voyant"><iframe src="http://voyant-tools.org/tool/Cirrus/?input={{ ghpath }}&stopList=stop.en.taporware.txt&visible=100"
+    style="width: 750px; height: 500px;"></iframe></div>
+
+<ul>
+<li><a href="http://voyant-tools.org/?input={{ ghpath }}">Explore in Voyant</a></li>
+</ul>
+
+<h2>List of titles</h2>
+
+<p>Any text in square brackets has been removed from the titles as these are aditions by archivists. Blank lines indicate the complete file title itself has been withheld from the public.</p>
+
+<ul>
+<li><a href="{{ filename | prepend: page.github_url | append: '.txt' }}">View on GitHub</a></li>
+</ul>
+
+{% highlight plaintext %}
+{% include {{ filepath }} %}
+{% endhighlight %}

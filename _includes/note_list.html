@@ -5,4 +5,6 @@
     <li><a href="{{ site.baseurl }}{{ note.url }}">{{ note.title }}, {{ note.date | date_to_string}}</a></li>
 {% elsif note.note_type == "Other sources" %}
     <li><a href="{{ site.baseurl }}{{ note.url }}">{{ note.title }}</a></li>
+{% else %}
+    <li><a href="{{ site.baseurl }}{{ note.url }}">{{ note.title }}</a></li>
 {% endif %}

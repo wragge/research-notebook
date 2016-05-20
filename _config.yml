@@ -21,6 +21,10 @@ gems:
 # Build settings
 markdown: kramdown
 
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
 collections:
   projects:
     output: true
@@ -29,6 +33,9 @@ collections:
     output: true
     permalink: '/:collection/:title/'
     layout: default
+  experiments:
+    output: true
+    permalink: '/:collection/:title/'
 
 gallery:
   # path to the gallery

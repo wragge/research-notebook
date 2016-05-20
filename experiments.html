@@ -1,0 +1,18 @@
+---
+permalink: /experiments/
+layout: default
+title: Experiments
+---
+
+<h1>Experiments</h1>
+
+{% assign groups = site.experiments | group_by: "category" | sort: "name" %}
+{% for group in groups %}
+    <h3>{{ group.name }}</h3>
+    <ul>
+    {% assign notes = group.items | sort "date" | reverse %}
+    {% for note in notes %}
+        <li><a href="{{ site.baseurl }}{{ note.url }}">{{ note.title }}</a></li>
+    {% endfor %}
+    </ul>
+{% endfor %}
