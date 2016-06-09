@@ -17,6 +17,7 @@ github_username:  wragge
 
 gems:
   - jekyll-gallery-generator
+  - jekyll-redirect-from
 
 # Build settings
 markdown: kramdown
