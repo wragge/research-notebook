@@ -8,13 +8,13 @@ note_type: Other sources
 
 Statistics on access examination from the Annual Reports of the National Archives of Australia.
 
-<iframe width="100%" height="500" frameborder="0" scrolling="no" src="https://plot.ly/~wragge/421.embed"></iframe>
+<iframe class="img-example" width="100%" height="500" frameborder="0" scrolling="no" src="https://plot.ly/~wragge/421.embed"></iframe>
 
-Note that you can click on a trace in the legend to hide/show it.
+You can click on a trace in the legend to hide/show it. See below for the raw stats. Years may not be directly comparable because the way in which the statistics were collected changed in 2011-12.
 
 And as percentages:
 
-<iframe width="100%" height="500" frameborder="0" scrolling="no" src="https://plot.ly/~wragge/422.embed"></iframe>
+<iframe class="img-example" width="100%" height="500" frameborder="0" scrolling="no" src="https://plot.ly/~wragge/422.embed"></iframe>
 
 ### Annual Report 1998–99
 
@@ -123,7 +123,7 @@ p. 31:
 
 Note the addition of explanatory notes to the table:
 
-![ Table from Annual Report ]({{ site.baseurl }}/images/naa-annual-report-2003-4-p31.png){: .img-responsive }
+![ Table from Annual Report ]({{ site.baseurl }}/images/naa-annual-report-2003-4-p31.png){: .img-responsive .img-example}
 
 ### Annual Report 2004--2005
 
@@ -146,7 +146,7 @@ Note that I've kept the format the same as previous years, even though as you ca
 
 Note change in layout as several previously separate tables are now all munged together:
 
-![ Table ]({{ site.baseurl }}/images/naa-annual-report-2004-5-p32.png){: .img-responsive }
+![ Table ]({{ site.baseurl }}/images/naa-annual-report-2004-5-p32.png){: .img-responsive .img-example}
 
 ### Annual Report 2005--2006
 

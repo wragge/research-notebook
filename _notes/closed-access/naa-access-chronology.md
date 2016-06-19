@@ -26,6 +26,7 @@ note_type: Other sources
 1966
 : Cabinet discussion -- agreed to 50 years. Also 'Open access' prior to 1923 and 'Qualified access' to 1939.
 
+
 1970
 : Cabinet -- changed to 30 years (cabinet record 50), plus 'qualified access' to WWII records
 
