@@ -6,7 +6,7 @@ category: Closed Access
 date: 2016-06-19
 ---
 
-In many cases there'll be multiple reasons cited for closing a file. I thought I might try a simple network visualisation using Gephi to get a sense of which reasons occurred together.
+In many cases there'll be multiple [reasons](http://closedaccess.herokuapp.com/reasons/) cited for closing a file. I thought I might try a simple network visualisation using [Gephi](https://gephi.org/) to get a sense of which reasons occurred together.
 
 To do this I needed to create two CSV files listing:
 
@@ -82,9 +82,9 @@ I'm a bit of a Gephi newbie, so I basically just followed [Martin Grandjean's tu
 
 [![Network visualisation]({{ site.baseurl }}/images/reasons_graph_labelled.png){: .img-responsive .img-example}]({{ site.baseurl }}/images/reasons_graph_labelled.png)
 
-It's no surprise that 33(1)(a) and 33(1)(g) figure prominently as they're the most often cited exemptions defined in the Archives Act. But it's interesting that 33(1)(a) has almost as many connections as 33(1)(g), when the latter is cited about four times as much. The centrality of 33(1)(a) reflects the fact that it's used in conjunction with a range of other reasons. My assumption is that 33(1)(a) is the go-to exemption for anything security related, with other, more specific, exemptions added as required. 
+It's no surprise that [33(1)(a)](http://closedaccess.herokuapp.com/reasons/33%281%29%28a%29/) and [33(1)(g)](http://closedaccess.herokuapp.com/reasons/33%281%29%28g%29/) figure prominently as they're the most often cited exemptions defined in the Archives Act. But it's interesting that 33(1)(a) has almost as many connections as 33(1)(g), when the latter is cited about four times as much. The centrality of 33(1)(a) reflects the fact that it's used in conjunction with a range of other reasons. My assumption is that 33(1)(a) is the go-to exemption for anything security related, with other, more specific, exemptions added as required. 
 
-The centrality and rate of citation of 33(1)(a) and 33(1)(g) also suggests that the range of available reasons could be simplified.
+The centrality and [rate of citation](http://closedaccess.herokuapp.com/reasons/) of 33(1)(a) and 33(1)(g) also suggests that the range of available reasons could be simplified.
 
 
 
