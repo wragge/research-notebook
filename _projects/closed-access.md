@@ -19,3 +19,5 @@ status: Current
 
 * Files in the National Archives of Australia withheld from public access in 2015  
   [https://dx.doi.org/10.6084/m9.figshare.2060052.v1 <i class="fa fa-external-link" aria-hidden="true"></i>](https://dx.doi.org/10.6084/m9.figshare.2060052.v1)
+ * Files in the National Archives of Australia withheld from public access (the complete Closed Access dataset)  
+   [https://dx.doi.org/10.6084/m9.figshare.3443867.v1 <i class="fa fa-external-link" aria-hidden="true"></i>](https://dx.doi.org/10.6084/m9.figshare.3443867.v1)

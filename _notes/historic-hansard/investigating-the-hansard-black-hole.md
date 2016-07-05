@@ -30,7 +30,7 @@ At first I thought they were just some artefact of the system and didn't really 
 
 If you search ParlInfo for the date in the XML file above, [20 September 1907](http://parlinfo.aph.gov.au/parlInfo/search/summary/summary.w3p;adv=yes;orderBy=date-eLast;page=0;query=Date%3A20%2F09%2F1907%20%3E%3E%2020%2F09%2F1907%20Dataset%3Ahansards,hansards80;resCount=Default), just one result is returned. This is odd -- normally you'd expect to see a list of the debates and questions that made up the day's proceedings. For example the previous day, [19 September 1907](http://parlinfo.aph.gov.au/parlInfo/search/summary/summary.w3p;adv=yes;orderBy=date-eLast;page=0;query=Date%3A20%2F09%2F1907%20%3E%3E%2020%2F09%2F1907%20Dataset%3Ahansards,hansards80;resCount=Default), returns 75 results.
 
-If you click on the single result for 20 September 1907, you'll notice again that there isn't the usual nested list of the day's proceedings in the left hand column. It's just empty. If you click on the 'View/Save XML' link you'll see the same empty XML file I harvested. The 'Download fragment' link provides an empty PDF template. Interestingly, if you click on the 'Download full day's Hansard' you get a PDF file that says it has 30 pages, but only the first page is visible.
+If you click on the single result for 20 September 1907, you'll notice again that there isn't the usual nested list of the day's proceedings in the left hand column. It's just empty. If you click on the 'View/Save XML' link you'll see the same empty XML file I harvested. The 'Download fragment' link provides an empty PDF template. Interestingly, if you click on the 'Download full day's Hansard' you get a PDF file that says it has 30 pages, but only the first page is visible. (**Update, 5 July 2016**: I think this problem with PDFs loading was just a browser issue.)
 
 Ok, so something clearly has gone wrong in the scanning/OCR/markup process. These things happen. The question is, what is the impact on users who have assumed that ParlInfo provides a full record of Hansard.
 
@@ -65,6 +65,15 @@ So if you've been using ParlInfo to search through Hansard in the period 1910 to
 ## What about the House of Reps?
 
 As I noted, I originally wasn't paying much attention to the empty files, and I think there were a couple that popped up when I was harvesting the House of Reps. But I'm pretty sure the scale of the problem is nothing like what I've observed in the Senate. To be sure, I'm running my harvesting script again across the Reps, gathering information about any empty files. So we'll know for sure in a day or two.
+
+### Update, 5 July 2016
+
+After reharvesting the House of Reps I found that there were three missing days:
+
+* 25 April 1902 -- [XML](http://parlinfo.aph.gov.au/parlInfo/download/hansard80/hansardr80/1902-04-25/toc_unixml/009331190204254_5630.xml;fileType=text%2Fxml), [PDF](http://parlinfo.aph.gov.au/parlInfo/download/hansard80/hansardr80/1902-04-25/toc_pdf/009331190204254.pdf;fileType=application%2Fpdf)
+* 27 March 1930 -- [XML](http://parlinfo.aph.gov.au/parlInfo/download/hansard80/hansardr80/1930-03-27/toc_unixml/123331193003270_8535.xml;fileType=text%2Fxml), [PDF](http://parlinfo.aph.gov.au/parlInfo/download/hansard80/hansardr80/1930-03-27/toc_pdf/123331193003270.pdf;fileType=application/pdf)
+
+There was also something funny about 29 August 1945. The [XML file](http://parlinfo.aph.gov.au/parlInfo/download/hansard80/hansardr80/1945-08-29/toc_unixml/19351101_reps_14_147_c1.xml;fileType=text%2Fxml) I harvested for that day seems to be from 1 November 1935. If you search for 29 August 1945, things seem ok on the surface. But if you click on any of the results you'll see the content is from 1935. So once again the day seems to be missing.
 
 ## The empty files
 
